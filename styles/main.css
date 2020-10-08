@@ -1,0 +1,93 @@
+:root {
+  /* variáveis no css */
+  --color-background: #ffffff;
+  --color-primary: #000000;
+  --color-text-title: #000000;
+  --color-hover: #e6e0e0;
+
+  /* tamanho da fonte padrão: 
+    16px <-> 100% <-> 1rem (Root EleMent) */
+  font-size: 60%;
+  /* controle das medidas rem */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 2rem Epilogue;
+}
+
+h1 {
+  margin: 5rem;
+  color: var(--color-text-title);
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+#app input {
+  width: 40rem;
+  height: 4rem;
+  background: var(--color-background);
+  outline: 0;
+  border-width: 0.1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+/* #app button {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 0;
+  justify-content: center;
+  position: relative;
+  outline: 0;
+}
+
+#button {
+  padding-left: 0.8rem;
+  justify-content: center;
+  position: relative;
+} */
+
+#todo {
+  border-color: var(--color-primary);
+}
+
+#list {
+  display: flex;
+  justify-content: center;
+}
+
+#listitems {
+  list-style-type: square;
+}
+
+a:active,
+:link,
+:visited {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a:hover {
+  text-decoration-line: line-through;
+}
