@@ -1,14 +1,13 @@
 :root {
-  /* variáveis no css */
+  /* CSS variables */
   --color-background: #ffffff;
   --color-primary: #000000;
   --color-text-title: #000000;
   --color-hover: #e6e0e0;
 
-  /* tamanho da fonte padrão: 
+  /* default font size: 
     16px <-> 100% <-> 1rem (Root EleMent) */
   font-size: 60%;
-  /* controle das medidas rem */
 }
 
 * {

@@ -56,7 +56,11 @@ function addItems() {
 function addItem() {
   const inputElement = document.querySelector('#app input');
 
-  if (inputElement.value == '') {
+  let string = inputElement.value;
+
+  // check whether the value is empty or contains only space
+  if (inputElement.value.length === 0 || string.trim() == '') {
+    inputElement.value = '';
     setFocus('todo');
     return;
   }
